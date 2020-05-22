@@ -3,13 +3,11 @@
 
 def key_for_min_value(name_hash)
   charlie = Float::INFINITY
+  frank = nil
   name_hash.each do |kye, val|
     if val < charlie
       charlie = val
     end
-  end
-  frank = nil
-  name_hash.each do |kye, val|
     if charlie == val
       frank = kye
     end
